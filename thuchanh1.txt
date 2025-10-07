@@ -1,0 +1,121 @@
+#W2A1
+print('hello world')
+
+#W2A2
+name = input("ten cua ban la gi?: ")
+print(f'xin chao {name}')
+
+#W2A4
+a1,b1,c1,a2,b2,c3 = map(int, input('nhap diem cua ban: ').split())
+tb =(a1+b1+c1+a2*2+b2*2+c3*3)/10
+print(f'diem tb cua ban la: {tb}')
+
+#W2A5
+a,b = map(float, input('nhap 2 gia tri bat ki: ').split())
+c = a**b
+print(f'{a}^{b} = {c}')
+
+#W2A3
+a,b = map(int, input('nhap vao 2 so nguyen bat ki: ').split())
+print(f'''tong: {a+b}
+hieu: {a-b}
+tich: {a*b}
+chia: {(a/b):.2f}
+phan nguyen: {(a//b)}
+du: {a%b}''')
+
+#W2A6
+a = input('nhap ki tu chu cai thuong bat ki: ')
+print(f'''{a}: {ord(a)}
+in hoa: {chr(ord(a)-32)}''')
+
+#W2A7
+A = ((13**2)*3)+5
+B = 13**2*3+5
+print(A, B)
+
+#W2A8
+c = float(input('nhap do C bat ki:'))
+f = 1.8*c+32
+print(f'{c}C = {f:.2f}F')
+
+#W2A9
+w=float(input('gia tien dong ho (USD): '))
+total = w*1.4+10
+print(f'tong so tien can tra: {total:.2f} USD') 
+
+#W2A10
+a,b,c  = input('nhap ten 3 nguoi bat ki: ').split()
+print(c ,b,a)
+
+#W2A11
+a,b = map(int, input('nhap lan luot gio va phut: ').split())
+c = a*3600+b*60
+print(f'tong so giay: {c}s')
+
+#W2A12
+a = int(input('nhap do dai canh cua rubik: '))
+b = a**2*6
+print(f'so mieng dan can dung la: {b}')
+
+#W2A13
+a,b = map(int, input('nhap 2 gia tri nguyen duong: ').split())
+c = a*b-a*b//10*10
+print(f'hang don vi cua {a}*{b} la: {c}')    
+
+#W2A14
+b,a = map(int, input('nhap lan luot a va b: ').split())
+print(f'''b: {b}
+a: {a}''')
+
+#W2A15
+#W2A16
+print('''spring
+summer
+autumn
+winter''')
+
+#W2A17
+print('''*
+**
+***''')
+
+#W2A18
+print('''*** *  *** ***
+ *  **  *   *
+ *  *   *   *''')
+
+#W2A19
+print('''monday
+tuesday
+wenesday
+thursday
+friday
+saturday
+sunday''')
+
+#W2A20
+print('''January 
+February 
+March 
+April
+may
+June
+July 
+August 
+September 
+October 
+November 
+December ''')
+
+#W2A21
+print('''hello world
+hello world
+hello world
+hello world
+hello world
+hello world
+hello world
+hello world
+hello world
+hello world ''')
