@@ -1,0 +1,69 @@
+#bai1
+#n = int(input('nhap vao 1 so nguyen: '))
+#print(n*2)
+
+#bai2
+#import math
+#a,b = map(float, input('nhap vao chieu rong, chieu dai lan luot:').split())
+#print(f'dien tich trong cay la: {(a*b-(a/2)**2*math.pi):.2f}')
+
+#bai4
+#wor = input('nhap vao 1 ki tu: ')
+#if len(wor) == 1 and wor.isalpha():
+#    if wor.isupper():
+#        print(f'{wor} la mot ki tu alpha vt hoa')
+#    elif wor.islower():
+#        print(f'{wor} la mot ki tu alpha vt thuong')
+#else:
+#    print(f'{wor} khong phai 1 ki tu alpha')
+
+#bai3
+#wor = input('nhap vao 1 ki tu alpha: ')
+#if wor.isupper():
+#    print(wor.lower())
+#elif wor.islower():
+#    print(wor.upper())
+
+#bai5
+#upp = input('nhap vao 1 chu cai in hoa: ')
+#print(chr(ord(upp)+31))
+
+#bai6
+#a,b,c = map(float, input('nhap vao do dai 3 canh: ').split())
+#if a+b>c and a+c>b and b+c>a:
+#    print('day la 1 tam giac')
+#else:
+#    print('day khong phai 1 tam giac')
+
+#bai7
+#a = input('nhap vao chuoi ki tu >= 20 tu: ')
+#print(f'''ki tu thu 5: {a[4]}
+#ki tu thu 9: {a[8]}''')
+
+#bai8
+#c = input('ho va ten: ')
+#a = int(input('nhap vao so dien thang trc: '))
+#b = int(input('nhap vao so dien thang nay: '))
+#m = 0
+#if b >=400:
+# m = (b-400)*3460 + 100*(3350+2998+2380) + 50*(2050+1984)
+#elif b >=300:
+# m = (b-300)*3350 + 100*(2998+2380) + 50*(2050+1984)
+#elif b>=200:
+# m = (b-200)*2998 + 100*(2380) + 50*(2050+1984)
+#elif b>=100:
+# m = (b-100)*2380 + 50*(2050+1984)
+#elif b>=50:
+# m = (b-50)*2050 +50*1984
+#elif b >=0:
+# m = b*1984
+#m = m*1.08
+#print(f'gia tien dien thang nay la: {m} dong')
+
+#bai9
+#a = int(input('nhap vao 1 so nguyen: '))
+#if a%2==0:
+#    print(f'{a} la so chan')
+#else:
+#    print(f'{a} la so le')
+
