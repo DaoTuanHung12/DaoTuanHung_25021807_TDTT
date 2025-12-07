@@ -106,3 +106,5 @@ def hamming(a,b):
           count += 1
  return count
 print(hamming(1,4))
+
+print('chad')
