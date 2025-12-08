@@ -68,32 +68,8 @@ cal(5,'*',3)
 #bai 8
 def hamming(a,b):
  count = 0
- flag = True
- glag = True
- hama = []
- hamb = []
- while flag:
-     if a%2 == 0:
-         hama.append(0)
-         a = a//2
-     if a == 1:
-         hama.append(1)
-         flag = False 
-     if a%2 == 1:
-         hama.append(1)
-         a = a//2 
- while glag:
-     if b%2 == 0:
-         hamb.append(0)
-         b = b//2
-     if b == 1:
-         hamb.append(1)
-         glag = False
-     if b%2 == 1:
-         hamb.append(1)
-         b = b//2
- hama = hama[::-1]
- hamb = hamb[::-1] 
+ hama = list(str(f'{a:b}'))
+ hamb = list(str(f'{b:b}'))
  if len(hama) < len(hamb):
      count = len(hamb) - len(hama)
      for i in range(len(hama)):
@@ -105,6 +81,17 @@ def hamming(a,b):
          if hama[i] != hamb[i]:
           count += 1
  return count
-print(hamming(1,4))
+print(hamming(1,10))
 
-print('chad')
+#bai9
+def sumnum(a):
+    tong = sum((map(int, str(abs(a)))))
+    print(tong)
+
+#bai10
+def dangcau(a,b):
+    quytac = len(set(zip(a,b)))
+    if quytac == len(set(a)) == len(set(b)):
+        return True
+    return False
+print(dangcau('abca','zbzx'))
