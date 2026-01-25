@@ -132,7 +132,7 @@ for i in n:
         result[key] = int(value)
 print(result)
 
-#bai1
+#bai16
 n = int(input('nhap vao n hang: '))
 m = int(input('nhap vao m cot: '))
 l = []
@@ -141,11 +141,11 @@ for i in range(m*n):
     l.append(int(input(f'nhap vao phan tu thu {i+1}: ')))
 for i in range(n):
     for j in range(m):
-        print(f'{l[count]}',end = ' ')
+        print(' '*(4-len(str(l[count])))+f'{l[count]}',end = ' ')
         count += 1
     print()
 
-#bai2
+#bai17
 n = int(input('nhap vao n hang,cot: '))
 m = n
 l = []
@@ -164,3 +164,54 @@ print()
 print('duong cheo phu:',end = ' ')
 for i in range(n-1,len(l)-1,n-1):
     print(l[i],end = ' ')
+
+#bai18
+n, m, k = map(int, input().split())
+matrix = []
+for i in range(n):
+    row = list(map(int, input().split()))
+    matrix.append(row)
+
+tong_cot = sum(matrix[i][k] for i in range(n))
+print(tong_cot)
+
+#bai19
+def vi_tri_max(lst):
+    max_val = max(lst)
+    return lst.index(max_val)
+
+#bai20
+def tim_k(lst, k):
+    try:
+        return lst.index(k)
+    except ValueError:
+        return -1
+    
+#bai21
+chuoi_nhap = input().split()
+d = {}
+for i, s in enumerate(chuoi_nhap):
+    if s not in d:
+        d[s] = []
+    d[s].append(i)
+
+for key in d:
+    d[key] = tuple(d[key])
+print(d)
+
+#bai22
+def vi_tri_max(lst):
+    max_val = max(lst)
+    return lst.index(max_val)
+
+#bai23
+def xoa_nho_hon_x(arr, x):
+    return [i for i in arr if i >= x]
+
+#bai24
+def day_so_0(arr):
+    khac_0 = [i for i in arr if i != 0]
+    so_0 = [0] * (len(arr) - len(khac_0))
+    return khac_0 + so_0
+
+print(vi_tri_max([1,2,3]))
